@@ -1,6 +1,6 @@
 {
   "name": "@eklabdev/bling",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A comprehensive TypeScript decorators library implementing Stage 3 decorators for TS 5.0+",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
