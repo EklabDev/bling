@@ -7,6 +7,10 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EklabDev/bling"
+  },
   "scripts": {
     "build": "tsc",
     "test": "jest",
@@ -28,7 +32,7 @@
     "performance",
     "caching"
   ],
-  "author": "EKLabs",
+  "author": "EKLab",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.12",
