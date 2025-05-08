@@ -1,7 +1,7 @@
 import {
   Schedule,
   Interval,
-  Timeout,
+  Delay,
   cleanupScheduling,
   Schedulable,
 } from '../../decorators/method/scheduling';
@@ -151,13 +151,13 @@ describe('Scheduling Decorators', () => {
     });
   });
 
-  describe('Timeout', () => {
-    it('should set a timeout for the method', () => {
+  describe('Delay', () => {
+    it('should set a delay for the method', () => {
       // Arrange
       class TestClass {
         public called = false;
 
-        @Timeout(1000)
+        @Delay(1000)
         testMethod() {
           this.called = true;
         }
@@ -176,7 +176,7 @@ describe('Scheduling Decorators', () => {
       class TestClass {
         public called = false;
 
-        @Timeout(1000)
+        @Delay(1000)
         testMethod() {
           this.called = true;
         }
@@ -199,7 +199,7 @@ describe('Scheduling Decorators', () => {
       (setTimeout as unknown as jest.Mock).mockReturnValueOnce(timeoutId);
 
       class TestClass {
-        @Timeout(1000)
+        @Delay(1000)
         testMethod() {}
       }
 
@@ -229,7 +229,7 @@ describe('Scheduling Decorators', () => {
         @Interval(1000)
         intervalMethod() {}
 
-        @Timeout(2000)
+        @Delay(2000)
         timeoutMethod() {}
       }
 

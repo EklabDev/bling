@@ -102,7 +102,7 @@ export function Interval(interval: number) {
  * Execute a method after a specified delay
  * @param delay - The delay in milliseconds
  */
-export function Timeout(delay: number) {
+export function Delay(delay: number) {
   return function <This extends object, Args extends any[], Return>(
     target: (this: This, ...args: Args) => Return,
     context: ClassMethodDecoratorContext<This, (this: This, ...args: Args) => Return>
